@@ -9,6 +9,7 @@ import asyncio
 client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 console = Console()
 
+
 async def send_request():
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
@@ -37,7 +38,7 @@ async def ask_chatgpt(prompt):
 
     progress.update(t, completed=100)
     if answer:
-        ans = f"> ChatGPT:"
+        ans = "> ChatGPT:"
         console.print(Markdown(ans))
         console.print(Markdown("".join(answer)), end="")
 
@@ -49,4 +50,5 @@ if __name__ == "__main__":
 
     else:
         console.print(Markdown("ERROR: INVALID USAGE"))
-        console.print(Markdown('\n`Usage: $ tgpt "This is my prompt for chatgpt`"'))
+        console.print(
+            Markdown('\n`Usage: $ tgpt "This is my prompt for chatgpt`"'))
