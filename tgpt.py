@@ -50,5 +50,4 @@ if __name__ == "__main__":
 
     else:
         console.print(Markdown("ERROR: INVALID USAGE"))
-        console.print(
-            Markdown('\n`Usage: $ tgpt "This is my prompt for chatgpt`"'))
+        console.print(Markdown('\n`Usage: $ tgpt "This is my prompt for chatgpt`"'))
