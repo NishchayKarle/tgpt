@@ -17,11 +17,11 @@
 
 + **STEP 1**: Add OpenAI API key to the environment. (OpenAI API Key can be created [here](https://platform.openai.com/api-keys))
 
-    ```echo "export OPENAI_API_KEY=<your_api_key>" > ~/.zshrc```
+    ```echo "export OPENAI_API_KEY=<your_api_key>" >> ~/.zshrc```
 
     or
 
-    ```echo "export OPENAI_API_KEY=<your_api_key>" > ~/.bashrc```
+    ```echo "export OPENAI_API_KEY=<your_api_key>" >> ~/.bashrc```
 
     Quit and re-open the terminal.
 
