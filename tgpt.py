@@ -23,7 +23,9 @@ async def send_request():
 
 async def ask_chatgpt(prompt):
     console.print(Markdown("# TGPT"))
-    q = f"> Prompt: {prompt}"
+
+    clean_prompt = '\n'.join([line for line in prompt.strip().splitlines() if line]) 
+    q = f"> Prompt: {clean_prompt}"
     console.print(Markdown(q))
 
     answer = []
